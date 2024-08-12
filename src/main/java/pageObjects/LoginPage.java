@@ -13,8 +13,8 @@ public class LoginPage extends TestEngineClass{
 	}
 	
 	
-	public static void enterEmail() {
-		CommonMethods.type(driver.findElement(emailTextBox), "karthick@gmail.com");
+	public static void enterEmail(String email) {
+		CommonMethods.type(driver.findElement(emailTextBox), email);
 	}
 	
 	public static void enterPassword() {

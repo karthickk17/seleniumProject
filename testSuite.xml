@@ -5,21 +5,12 @@
 	<listeners>
 		<listener class-name="util.Listener" />
 	</listeners>
-    <test name="Login and Signup test">
-        <classes>
-            <class name="tests.LoginPageTest" />
-        </classes>
-    </test>
-    <test name="Signup test">
-        <classes>
-            <class name="tests.SignupPageTest" />
-        </classes>
-    </test>
-    <test name="Buy products Test">
+    <test name="Workflow Test">
     	<classes>
-    		<class name="tests.HomePageTest" />
-    		<class name="tests.CartProductsPageTest" />
-    		<class name="tests.CashoutPageTest" />
+           	<class name="tests.LoginPageTest" />
+            <class name="tests.SignupPageTest" />
+    		<class name="tests.ProductBuyTest" />
+    		<class name="tests.CartFailureTest" />
     	</classes>
     </test>
 </suite>

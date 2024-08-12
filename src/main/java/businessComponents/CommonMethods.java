@@ -16,4 +16,8 @@ public class CommonMethods {
 		
 	}
 	
+	public static void waitTime(long t) throws InterruptedException {
+		Thread.sleep(t);
+	}
+	
 }

@@ -3,23 +3,24 @@ package tests;
 
 import org.testng.annotations.Test;
 
+import businessComponents.CommonMethods;
 import pageObjects.*;
 
 public class SignupPageTest extends SignupPage{
 	
 	@Test()
 	public static void signupTest() throws InterruptedException {
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 		clickSignupButton();
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 		enterName();
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 		enterEmail();
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 		enterPassword();
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 		clickButton();
-		Thread.sleep(2000);
+		CommonMethods.waitTime(1000);
 	}
 	
 	

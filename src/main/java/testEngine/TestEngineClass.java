@@ -7,6 +7,7 @@ import org.testng.annotations.*;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import businessComponents.CommonMethods;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static businessComponents.common.*;
@@ -19,7 +20,7 @@ public class TestEngineClass {
 	public static ExtentReports report;
 	public static ExtentTest logger;
 	
-	@BeforeTest
+	@BeforeClass
 	public static void openBroswer() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -28,8 +29,8 @@ public class TestEngineClass {
 	}
 	
 	
-	@AfterTest
-	public static void closeBrowser() {
-        //driver.close();
+	@AfterClass
+	public static void closeBrowser() throws InterruptedException {
+        driver.close();
 	}
 }

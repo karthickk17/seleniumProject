@@ -9,12 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Test Suite</th></tr>
-<tr><td><a href="#t0">Buy products Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">57,644</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Workflow Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">47,606</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Buy products Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.CartProductsPageTest</td><td><a href="#m0">cashOnDeliveryTest</a></td><td rowspan="1">1723462372274</td><td rowspan="1">1069</td></tr><tr class="passedodd"><td rowspan="1">tests.CashoutPageTest</td><td><a href="#m1">cashOnDeliveryTest</a></td><td rowspan="1">1723462373379</td><td rowspan="1">9496</td></tr><tr class="passedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m2">addProductTest</a></td><td rowspan="1">1723462349067</td><td rowspan="1">23125</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Workflow Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.CartFailureTest</td><td><a href="#m0">testCartIconAfterRemovingProduct</a></td><td rowspan="1">1723479532362</td><td rowspan="1">11004</td></tr><tr><th colspan="4">Workflow Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.LoginPageTest</td><td><a href="#m1">loginTest</a></td><td rowspan="1">1723479499053</td><td rowspan="1">8516</td></tr><tr class="passedodd"><td rowspan="1">tests.ProductBuyTest</td><td><a href="#m2">addProductTest</a></td><td rowspan="1">1723479517601</td><td rowspan="1">13086</td></tr><tr class="passedeven"><td rowspan="1">tests.SignupPageTest</td><td><a href="#m3">signupTest</a></td><td rowspan="1">1723479509354</td><td rowspan="1">6634</td></tr></tbody>
 </table>
-<h2>Buy products Test</h2><h3 id="m0">tests.CartProductsPageTest#cashOnDeliveryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.CashoutPageTest#cashOnDeliveryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.HomePageTest#addProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Workflow Test</h2><h3 id="m0">tests.CartFailureTest#testCartIconAfterRemovingProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Cart icon should display 0 after removing the product expected [0] but found [1]
+	at tests.CartFailureTest.testCartIconAfterRemovingProduct(CartFailureTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ProductBuyTest#addProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.SignupPageTest#signupTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

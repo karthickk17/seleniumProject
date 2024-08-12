@@ -12,7 +12,7 @@ public class LoginPageTest extends LoginPage{
 		Thread.sleep(2000);
 		clickLoginButton();
 		Thread.sleep(2000);
-		enterEmail();
+		enterEmail("karthick@gmail.com");
 		Thread.sleep(2000);
 		enterPassword();
 		Thread.sleep(2000);
