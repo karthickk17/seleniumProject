@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Buy products Test(failed)">
     <classes>
+      <class name="tests.CartProductsPageTest">
+        <methods>
+          <include name="openBroswer"/>
+          <include name="cashOnDeliveryTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.CartProductsPageTest -->
       <class name="tests.HomePageTest">
         <methods>
           <include name="openBroswer"/>
@@ -10,6 +17,13 @@
           <include name="addProductTest"/>
         </methods>
       </class> <!-- tests.HomePageTest -->
+      <class name="tests.CashoutPageTest">
+        <methods>
+          <include name="openBroswer"/>
+          <include name="cashOnDeliveryTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.CashoutPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Buy products Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->
