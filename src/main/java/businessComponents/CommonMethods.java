@@ -1,4 +1,4 @@
-package pageObjects;
+package businessComponents;
 
 import org.openqa.selenium.WebElement;
 

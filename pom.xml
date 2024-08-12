@@ -24,6 +24,21 @@
             <version>5.9.2</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-    </dependencies>
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.10.2</version>
+		    <scope>compile</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+		<dependency>
+		    <groupId>com.relevantcodes</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>2.41.2</version>
+		</dependency>
+
+
+
+  </dependencies>
   
 </project>

@@ -1,13 +1,15 @@
-import testEngine.TestEngineClass;
+//import testEngine.TestEngineClass;
+package tests;
 
 import org.testng.annotations.Test;
 
 import pageObjects.*;
 
 public class LoginPageTest extends LoginPage{
-
+	
 	@Test()
 	public static void loginTest() throws InterruptedException {
+		Thread.sleep(2000);
 		clickLoginButton();
 		Thread.sleep(2000);
 		enterEmail();
@@ -15,7 +17,6 @@ public class LoginPageTest extends LoginPage{
 		enterPassword();
 		Thread.sleep(2000);
 		clickButton();
-		Thread.sleep(2000);
 	}
 	
 	

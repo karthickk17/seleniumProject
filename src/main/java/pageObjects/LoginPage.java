@@ -3,6 +3,9 @@ package pageObjects;
 import testEngine.*;
 import static businessComponents.common.*;
 
+import businessComponents.CommonMethods;
+
+
 public class LoginPage extends TestEngineClass{
 
 	public static void clickLoginButton() {

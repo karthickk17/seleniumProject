@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static businessComponents.common.*;
@@ -12,7 +15,11 @@ public class TestEngineClass {
 
 	public static WebDriver driver;
 	
-	@BeforeClass
+	//Listener Variables
+	public static ExtentReports report;
+	public static ExtentTest logger;
+	
+	@BeforeTest
 	public static void openBroswer() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -20,8 +27,8 @@ public class TestEngineClass {
         driver.get(url);
 	}
 	
-	@AfterClass
+	@AfterTest
 	public static void closeBrowser() {
-        driver.quit();
+        driver.close();
 	}
 }
