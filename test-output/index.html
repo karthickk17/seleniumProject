@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,22 +109,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="tests.CartProductsPageTest" class="method navigator-link" hash-for-method="cashOnDeliveryTest">cashOnDeliveryTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Suite" title="tests.CashoutPageTest" class="method navigator-link" hash-for-method="cashOnDeliveryTest">cashOnDeliveryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="tests.LoginPageTest" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="tests.SignupPageTest" class="method navigator-link" hash-for-method="signupTest">signupTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_Suite" title="tests.CartProductsPageTest" class="method navigator-link" hash-for-method="cashOnDeliveryTest">cashOnDeliveryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
@@ -142,22 +132,7 @@
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.LoginPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CashoutPageTest</span>
+              <span class="class-name">tests.CartProductsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -172,22 +147,7 @@
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.SignupPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="signupTest">
-                  </a> <!-- signupTest -->
-                  <span class="method-name">signupTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
-          <div class="suite-Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CartProductsPageTest</span>
+              <span class="class-name">tests.CashoutPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -223,21 +183,21 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;util.Listener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login and Signup test&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Login and Signup test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login and Signup test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Signup test&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Signup test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.SignupPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Signup test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Buy products Test&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Buy products Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.HomePageTest&quot;/&gt;
       &lt;class name=&quot;tests.CartProductsPageTest&quot;/&gt;
@@ -287,32 +247,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signupTest')
-data.setCell(0, 2, 'tests.SignupPageTest')
-data.setCell(0, 3, 13276);
+data.setCell(0, 1, 'addProductTest')
+data.setCell(0, 2, 'tests.HomePageTest')
+data.setCell(0, 3, 8702);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
-data.setCell(1, 2, 'tests.LoginPageTest')
-data.setCell(1, 3, 9111);
+data.setCell(1, 1, 'cashOnDeliveryTest')
+data.setCell(1, 2, 'tests.CashoutPageTest')
+data.setCell(1, 3, 7310);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addProductTest')
-data.setCell(2, 2, 'tests.HomePageTest')
-data.setCell(2, 3, 8499);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'cashOnDeliveryTest')
-data.setCell(3, 2, 'tests.CashoutPageTest')
-data.setCell(3, 3, 6755);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'cashOnDeliveryTest')
-data.setCell(4, 2, 'tests.CartProductsPageTest')
-data.setCell(4, 3, 199);
+data.setCell(2, 1, 'cashOnDeliveryTest')
+data.setCell(2, 2, 'tests.CartProductsPageTest')
+data.setCell(2, 3, 286);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -331,7 +283,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CashoutPageTest</span>
+              <span class="ignored-class-name">tests.CartProductsPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openBroswer</span>
                 <br/>
@@ -340,7 +292,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CartProductsPageTest</span>
+              <span class="ignored-class-name">tests.CashoutPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openBroswer</span>
                 <br/>
@@ -361,60 +313,58 @@ return data;
                 <span class="method-name">openBroswer</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">8529 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">17665 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SignupPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBroswer</span>
-                <span class="method-start">18086 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">signupTest</span>
-                <span class="method-start">20558 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">33834 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBroswer</span>
-                <span class="method-start">34143 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">addProductTest</span>
-                <span class="method-start">37415 ms</span>
+                <span class="method-start">8234 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SignupPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">9715 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">10043 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CartProductsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cashOnDeliveryTest</span>
-                <span class="method-start">45914 ms</span>
+                <span class="method-start">16936 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CashoutPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">cashOnDeliveryTest</span>
-                <span class="method-start">46113 ms</span>
+                <span class="method-start">17232 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">52868 ms</span>
+                <span class="method-start">24542 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

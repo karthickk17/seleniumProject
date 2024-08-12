@@ -27,8 +27,9 @@ public class TestEngineClass {
         driver.get(url);
 	}
 	
+	
 	@AfterTest
 	public static void closeBrowser() {
-        driver.close();
+        //driver.close();
 	}
 }
