@@ -37,7 +37,7 @@ public class ProductBuyTest extends HomePage{
 		CommonMethods.waitTime(5000);
 		addProduct();
 		
-		CommonMethods.waitTime(1000);
+		CommonMethods.waitTime(7000);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("Toastify__toast-container")));
 		goToCartPage();
@@ -52,7 +52,9 @@ public class ProductBuyTest extends HomePage{
 		CommonMethods.waitTime(1000);
 		CashoutPage.enterAddress();
 		
+		CommonMethods.waitTime(1000);
 		CashoutPage.clickButton();
+		CommonMethods.waitTime(1000);
 		
 	}
 	

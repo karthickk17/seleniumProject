@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T21:48:16 IST" name="Test Suite" finished-at="2024-08-12T21:49:03 IST" duration-ms="47606">
+  <suite started-at="2024-08-13T15:17:39 IST" name="Test Suite" finished-at="2024-08-13T15:18:49 IST" duration-ms="70557">
     <groups>
     </groups>
-    <test started-at="2024-08-12T21:48:16 IST" name="Workflow Test" finished-at="2024-08-12T21:49:03 IST" duration-ms="47606">
+    <test started-at="2024-08-13T15:17:39 IST" name="Workflow Test" finished-at="2024-08-13T15:18:49 IST" duration-ms="70557">
       <class name="tests.CartFailureTest">
-        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-12T21:48:50 IST" name="openBroswer" finished-at="2024-08-12T21:48:52 IST" duration-ms="1537" status="PASS">
+        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-13T15:18:31 IST" name="openBroswer" finished-at="2024-08-13T15:18:36 IST" duration-ms="4443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBroswer -->
-        <test-method signature="testCartIconAfterRemovingProduct()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-12T21:48:52 IST" name="testCartIconAfterRemovingProduct" finished-at="2024-08-12T21:49:03 IST" duration-ms="11004" status="FAIL">
+        <test-method signature="testCartIconAfterRemovingProduct()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-13T15:18:36 IST" name="testCartIconAfterRemovingProduct" finished-at="2024-08-13T15:18:48 IST" duration-ms="12234" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Cart icon should display 0 after removing the product expected [0] but found [1]]]>
@@ -56,49 +56,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCartIconAfterRemovingProduct -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-12T21:49:03 IST" name="closeBrowser" finished-at="2024-08-12T21:49:03 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.CartFailureTest@54c5a2ff]" started-at="2024-08-13T15:18:49 IST" name="closeBrowser" finished-at="2024-08-13T15:18:49 IST" duration-ms="422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.CartFailureTest -->
       <class name="tests.SignupPageTest">
-        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-12T21:48:27 IST" name="openBroswer" finished-at="2024-08-12T21:48:29 IST" duration-ms="1628" status="PASS">
+        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-13T15:17:54 IST" name="openBroswer" finished-at="2024-08-13T15:17:57 IST" duration-ms="3468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBroswer -->
-        <test-method signature="signupTest()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-12T21:48:29 IST" name="signupTest" finished-at="2024-08-12T21:48:35 IST" duration-ms="6634" status="PASS">
+        <test-method signature="signupTest()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-13T15:17:57 IST" name="signupTest" finished-at="2024-08-13T15:18:05 IST" duration-ms="7259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-12T21:48:35 IST" name="closeBrowser" finished-at="2024-08-12T21:48:36 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.SignupPageTest@7526515b]" started-at="2024-08-13T15:18:05 IST" name="closeBrowser" finished-at="2024-08-13T15:18:05 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.SignupPageTest -->
       <class name="tests.ProductBuyTest">
-        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-12T21:48:36 IST" name="openBroswer" finished-at="2024-08-12T21:48:37 IST" duration-ms="1493" status="PASS">
+        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-13T15:18:05 IST" name="openBroswer" finished-at="2024-08-13T15:18:09 IST" duration-ms="3824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBroswer -->
-        <test-method signature="addProductTest()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-12T21:48:37 IST" name="addProductTest" finished-at="2024-08-12T21:48:50 IST" duration-ms="13086" status="PASS">
+        <test-method signature="addProductTest()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-13T15:18:09 IST" name="addProductTest" finished-at="2024-08-13T15:18:31 IST" duration-ms="22485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-12T21:48:50 IST" name="closeBrowser" finished-at="2024-08-12T21:48:50 IST" duration-ms="137" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.ProductBuyTest@1ed4ae0f]" started-at="2024-08-13T15:18:31 IST" name="closeBrowser" finished-at="2024-08-13T15:18:31 IST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.ProductBuyTest -->
       <class name="tests.LoginPageTest">
-        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-12T21:48:16 IST" name="openBroswer" finished-at="2024-08-12T21:48:19 IST" duration-ms="2766" status="PASS">
+        <test-method is-config="true" signature="openBroswer()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-13T15:17:39 IST" name="openBroswer" finished-at="2024-08-13T15:17:44 IST" duration-ms="5733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBroswer -->
-        <test-method signature="loginTest()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-12T21:48:19 IST" name="loginTest" finished-at="2024-08-12T21:48:27 IST" duration-ms="8516" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-13T15:17:44 IST" name="loginTest" finished-at="2024-08-13T15:17:54 IST" duration-ms="9127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-12T21:48:27 IST" name="closeBrowser" finished-at="2024-08-12T21:48:27 IST" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginPageTest@2ddc9a9f]" started-at="2024-08-13T15:17:54 IST" name="closeBrowser" finished-at="2024-08-13T15:17:54 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
