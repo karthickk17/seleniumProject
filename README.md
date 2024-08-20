@@ -9,8 +9,8 @@ Automating functional UI and end to end tests for https://grocery-glide.vercel.a
 - Extent Reports and logging
 
 ## Prerequisites
-- IDE (Eclipse)
-- JDK (version 7 or 8)
+- IDE (e.g. Eclipse)
+- JDK
 - Maven configuration
 
 ## How to run tests
