@@ -7,6 +7,8 @@ import businessComponents.CommonMethods;
 
 import java.security.SecureRandom;
 
+import org.openqa.selenium.WebDriver;
+
 
 public class SignupPage extends TestEngineClass{
 
@@ -42,10 +44,12 @@ public class SignupPage extends TestEngineClass{
 	}
 
 	public static void clickSignupButton() {
+		WebDriver driver = driverLocal.get();
 		CommonMethods.click(driver.findElement(signupLink));
 	}
 	
 	public static void enterName() {
+		WebDriver driver = driverLocal.get();
 		CommonMethods.type(driver.findElement(signupName), "Karthick");
 	}
 	
@@ -58,14 +62,17 @@ public class SignupPage extends TestEngineClass{
         String randomString = generateRandomString(prefixLength, domainLength, tldLength);
         System.out.println("Random String: " + randomString);
         
+        WebDriver driver = driverLocal.get();
 		CommonMethods.type(driver.findElement(signupEmail), randomString);
 	}
 	
 	public static void enterPassword() {
+		WebDriver driver = driverLocal.get();
 		CommonMethods.type(driver.findElement(signupPassword), "123456");
 	}
 	
 	public static void clickButton() {
+		WebDriver driver = driverLocal.get();
 		CommonMethods.click(driver.findElement(submitButton));
 	}
 }

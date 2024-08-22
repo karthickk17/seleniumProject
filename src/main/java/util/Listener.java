@@ -46,6 +46,8 @@ public class Listener extends TestEngineClass implements ITestListener, ISuiteLi
 	public void onTestFailure(ITestResult result) {
 		String fileName = String.format("Screenshot-%s.jpg", Calendar.getInstance().getTimeInMillis());
 		//WebDriver driver = (WebDriver)result.getTestContext().getAttribute("WebDriver"); //use string from setAttribute from BasePage
+		
+		WebDriver driver = driverLocal.get();
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File destFile = new File("./screenshots/" + fileName);
 		try {

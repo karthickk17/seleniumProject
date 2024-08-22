@@ -14,23 +14,30 @@ import static businessComponents.common.*;
 
 public class TestEngineClass {
 
-	public static WebDriver driver;
-	
-	//Listener Variables
-	public static ExtentReports report;
-	public static ExtentTest logger;
-	
-	@BeforeClass
-	public static void openBroswer() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+    // ThreadLocal WebDriver for parallel execution
+    public static ThreadLocal<WebDriver> driverLocal = new ThreadLocal<>();
+    
+    // Listener Variables for ExtentReports
+    public static ExtentReports report;
+    public static ExtentTest logger;
+    
+    @BeforeClass
+    public static void openBrowser() {
+        WebDriverManager.chromedriver().setup();
+        driverLocal.set(new ChromeDriver());
+        
+        // Get the driver instance for the current thread and perform actions
+        WebDriver driver = driverLocal.get();
         driver.manage().window().maximize();
-        driver.get(url);
-	}
-	
-	
-	@AfterClass
-	public static void closeBrowser() throws InterruptedException {
-        driver.close();
-	}
+        driver.get(url);  // 'url' needs to be initialized from 'businessComponents.common'
+    }
+    
+    @AfterClass
+    public static void closeBrowser() throws InterruptedException {
+        WebDriver driverInstance = driverLocal.get();
+        if (driverInstance != null) {
+            driverInstance.quit(); // Close the browser for this thread's WebDriver instance
+            driverLocal.remove(); // Remove the WebDriver instance from ThreadLocal
+        }
+    }
 }

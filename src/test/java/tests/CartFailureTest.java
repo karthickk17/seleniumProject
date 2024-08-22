@@ -3,6 +3,7 @@ package tests;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,6 +33,8 @@ public class CartFailureTest extends HomePage{
 		
 		CommonMethods.waitTime(5000);
 		addProduct();
+		
+		WebDriver driver = driverLocal.get();
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("Toastify__toast-container")));
